@@ -149,7 +149,7 @@ var volumen = getValores(10,20,4)[1];
 
 //Tipos de Funciones
 //Function Declaration (Named Functions): Crea una función para llamarla por el nombre despues. Esta funcion siempre existe en la memoria.
-function holaTu (nombre, apellido);{
+function holaTu (nombre, apellido){
     var nombreCompleto = nombre+apellido;
     return nombreCompleto;
 }
@@ -168,7 +168,6 @@ adiosATodos("cris", "valenzuela");
 
 // Esto lleva a que el nombre 'chaoTu' sea irrelevante pues ya está contenido en el nombre de la variable
 // De aquí, surgen las Funciones Anónimas o Anonymous Function:
-
 var helloWorld = function (numero1, numero2){
     return numero1 * numero2;
 }
@@ -397,10 +396,215 @@ nuevoLibro(miCaja, "Detectives Salvajes", "Roberto Bolaño"); // "# de libros" =
 //Para acceder a propiedades dentro de un objeto que está dentro de otro objeto:
 miCaja.libro1.titulo;
 miCaja["libro1"]["titulo"];
+
+
+
+
+
+
+
+//PROTOTYPES AND INHERETANCE
+// Every object has a Prototype
+// Object with one function and one variable
+var parent = {
+  get: function fn(){
+    return this.val:
+  },
+  val = 42
+};
+
+// Objeto that inherits all parent properties
+var child = Object.create(parent);
+child.val = 3.14156 // Add values to the chile
+// Or even, create a grandchild:
+var grandchild = Object.create(child);
+
+parent.get(); // 42
+child.get(); // 3.14156. JS will find get() in parent not in child, then will find this in child, that is equal to 3.14156
+grandchild.get(); // will return 3.14156
+
+// Polymorfism: same name but different behavior
+// When child behaves different that parent although you call the same method name
+
+// Create parent
+var answer = {
+  get: function fn1() {
+    return this.val;  // 42
+  }
+  val: 42
+};
+// Create child
+var firmAnswer = Object.create(answer);
+// Create new method with same name as parent
+firmAnswer.get = function fn2() {
+  return this.val + "!!"; // 42!!
+};
+
+//But to still get the first function from the parent:
+firmAnswer.get = function fn2() {
+  return answer.get.call(this) + "!!";
+}
+firmAnswer.val = 3.14156;
+firmAnswer.get(); // 3.14156!!
+
+// Classes and Instantiation
+var AnswerPrototype = {
+  get: function fn1(){
+    return this.val;
+  }
+};
+
+var lifeAnswer = Object.create(AnswerPrototype);
+lifeAnswer.val = 42;
+lifeAnswer.get(); // 42
+
+var dessertAnswer = Object.create(AnswerPrototype);
+dessertAnswer.val = 3.14156;
+dessertAnswer.get() // 3.14156
+
+var FirmAnswerPrototype = Object.create(AnswerPrototype);
+FirmAnswerPrototype.get = function fn2(){
+  return AnswerPrototype.get.call(this) + "!!";
+};
+
+var luckyAnswer = Object.create(FirmAnswerPrototype);
+luckyAnswer.val = 7;
+luckyAnswer.get() // 7!!
+
+var magicAnswer = Object.create(FirmAnswerPrototype);
+magicAnswer.val = 3;
+magicAnswer.get(); 3!!
+
+// But this has duplicated logic: .val everytime
+// And violates encapsulation: change the classes not the initilizations
+// So to fix that: Constructor
+var AnswerPrototype = {
+  constructor : function fn0 (value){
+    this._val = value;
+  },
+  get: function fn1() {
+    return this._val;
+  }
+};
+
+var lifeAnswer = Object.create(AnswerPrototype);
+lifeAnswer.constructor(42); // Initilize objects
+lifeAnswer.get(); // 42
+
+var dessertAnswer = Object.create(AnswerPrototype);
+dessertAnswer.constructor(3.14156);
+dessertAnswer.get(); // 3.14156
+
+var FirmAnswerPrototype = Object.create(AnswerPrototype);
+FirmAnswerPrototype.get = function fn2 (){
+  return AnswerPrototype.get.call(this) + "!!";
+};
+
+var luckyAnswer = Object.create(FirmAnswerPrototype);
+luckyAnswer.constructor(7);
+luckyAnswer.get(); // 7!!
+
+var magicAnswer = Object.create(FirmAnswerPrototype);
+magicAnswer.constructor(3);
+magicAnswer.get(); // 3!!
+
+/* === So to recap: Protoype Model is this way === */
+var AnswerPrototype = {
+  constructor : function fn0(value){
+    this._val = value;
+  },
+  get: function fn1(){
+    return this._val;
+  }
+};
+
+var lifeAnswer = Object.create(AnswerPrototype);
+lifeAnswer.constructor(42);
+lifeAnswer.get(); // 42
+
+var dessertAnswer = Object.create(AnswerPrototype);
+dessertAnswer.constructor(3.14156);
+dessertAnswer.get(); // 3.14156
+
+
+
+
+/* === And the Classic Model is this way === */
+// By convetion it starts with capital letters
+function Answer (value){
+  this._val = value;
+}
+
+Answer.prototype.get = function fn1(){
+  return this._val;
+};
+
+var lifeAnswer = new Answer(42);
+lifeAnswer.get(); // 42
+
+var dessertAnswer = new Answer(3.14156);
+dessertAnswer.get(); // 3.14156
+
+// But with subclasses is more complicated in the classic model:
+function FirmAnswer(value) {
+  Answer.call(this,value);
+}
+FirmAnswer.prototype = Object.create(Answer.prototype);
+FirmAnswer.prototype.constructor = FirmAnswer;
+
+FirmAnswer.prototype.get = function fn2(){
+  return Answer.prototype.get.call(this) + "!!";
+};
+
+var luckyAnswer = new FirmAnswer(7);
+luckyAnswer.get(); // 7!!
+
+var magicAnswer = new FirmAnswer(3);
+magicAnswer.get(); // 3!!
+
+
+
+
+
+
+
+// New ES6 Syntax
+
+class Answer{
+  constructor(value){
+    this._val = value;
+  }
+  get(){
+    return this._val;
+  }
+}
+
+var lifeAnswer = new Answer(42);
+lifeAnswer.get(42) // 42
+
+var dessertAnswer = new Answer(3.14156);
+dessertAnswer.get(); // 3.14156
+
+class FirmAnswer extends Answer {
+  constructor(value){
+    super(value);
+  }
+  get(){
+    return super() + "!!";
+  }
+};
+
+var luckyAnswer = new FirmAnswer(7);
+luckyAnswer.get(); // 7!!
+
+var magicAnswer = new FirmAnswer(3);
+magicAnswer.get(); // 3!!
+
+
 /*
 ===================================================
 ===================================================
-=================   OBJETOS   =====================
+=================   OBJECTS   =====================
 ===================================================
 ===================================================
 ===================================================
