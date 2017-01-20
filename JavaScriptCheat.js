@@ -13,6 +13,7 @@
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 // Definiciones
@@ -40,7 +41,11 @@ var buscarSiSeApellidadPerez = nombreCompleto.lastIndexOfindexOf("Perez"); // bu
 
 var frase = "Esta es otra frase";
 var segmento = frase.slice(5,9); // segmento = otra;
+
+let variable = 3; // Fix variables
+
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================  VARIABLES   ====================
@@ -57,6 +62,7 @@ var segmento = frase.slice(5,9); // segmento = otra;
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 
@@ -100,6 +106,7 @@ var matematicas = [
 ];
 
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================    ARRAY    =====================
@@ -116,6 +123,7 @@ var matematicas = [
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 //Construcción (Function Declaration)
@@ -206,6 +214,7 @@ var x = funcion (c,d){
 
 // La gracia de un IIFE es que no deja rastro de su existencia una vez llamada. Ya que son funciones anónimas sin nombre. No se pueden trackear buscando variables ya que no tienen ningún tipo de variable asociada. Las variables dentro de IIFE son locales.
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================  FUNCIONES  =====================
@@ -221,6 +230,7 @@ var x = funcion (c,d){
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 // Un closure es cuando una función local es capaz de acceder a variables del scope global de la funcion madre: Simplemente acceder a variables fuera del scope léxico inmediato crea un closure.
 // Un closure sirve para crear funciones muy similares de manera muy eficiente
@@ -301,6 +311,7 @@ result = jumble(2) = mystery2(6) + bonus = mystery4(120) + 2 = 120 + 2 = 122
 
 
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================   CLOSURE   =====================
@@ -317,6 +328,7 @@ result = jumble(2) = mystery2(6) + bonus = mystery4(120) + 2 = 120 + 2 = 122
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 //HOISTING es la propiedad de JavaScript para 'izar' o subir las declaraciones (variables, funciones,etc) al tope del scope. SOLO las declaraciones NO las asignaciones.
@@ -334,6 +346,7 @@ var y = 7;
 
 
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================  HOISTING  ======================
@@ -350,6 +363,7 @@ var y = 7;
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 var libros = ["Detectives", "Amorsh"] // Array para el ejemplo
@@ -398,11 +412,6 @@ miCaja.libro1.titulo;
 miCaja["libro1"]["titulo"];
 
 
-
-
-
-
-
 //PROTOTYPES AND INHERETANCE
 // Every object has a Prototype
 // Object with one function and one variable
@@ -413,7 +422,7 @@ var parent = {
   val = 42
 };
 
-// Objeto that inherits all parent properties
+// Objet that inherits all parent properties
 var child = Object.create(parent);
 child.val = 3.14156 // Add values to the chile
 // Or even, create a grandchild:
@@ -527,8 +536,6 @@ dessertAnswer.constructor(3.14156);
 dessertAnswer.get(); // 3.14156
 
 
-
-
 /* === And the Classic Model is this way === */
 // By convetion it starts with capital letters
 function Answer (value){
@@ -562,12 +569,6 @@ luckyAnswer.get(); // 7!!
 var magicAnswer = new FirmAnswer(3);
 magicAnswer.get(); // 3!!
 
-
-
-
-
-
-
 // New ES6 Syntax
 
 class Answer{
@@ -600,8 +601,332 @@ luckyAnswer.get(); // 7!!
 var magicAnswer = new FirmAnswer(3);
 magicAnswer.get(); // 3!!
 
+/*===== From JS Club =====*/
+/* Part 1: Functional Prograaming */
+
+
+// Functional programming
+var box = document.createElement('div');
+box.style.backgroundColor = 'black';
+box.style.position = 'absolute';
+box.style.width = '100px';
+box.style.height = '100px';
+document.body.appendChild(box);
+
+// If you find yourself repeating code, the best thing to do
+// is to wrap that code in a function to make it much more reusable
+function moveBox(b, x, y) {
+    b.style.top = x + 'px';
+    b.style.left = y + 'px';
+}
+
+// Functions also allow us to abstract things that we dont' want to remember
+// how to do.  Let's say we were doing some complex calculations to figure out
+// the future location of the box based on it's current position and it's
+// speed,
+// we'd wrap that calculation in it's own function so that we only have to
+// figure out how to do the calculations once, then we can just reuse it over
+// and over
+function changeColor(b, color) {
+    b.style.backgroundColor = color;
+}
+
+moveBox(box, 10, 10);
+
+// Set timeout is a good simple example of functional programming
+// it takes 2 things as arguments, a function to execute, and a number that
+// represents the time it should wait (in milliseconds) before funning the
+// passed function. That's what functional programming is all about, passing
+// functions to other functions.
+setTimeout(function() {
+    moveBox(box, 100, 100);
+}, 2000);
+
+var colors = ['blue', 3, 'orange', 'red', 'purple'];
+var continents = ['North America', 'South America', 'Europe', 'Asia', 'Africa', 'Australia', 'Antarctica'];
+
+// I hate for loops, and I want a functional way to do it
+// So I wrap a for loop in a function, that takes an array and another function
+// then for each item in the passed in array, I want to execute the function
+// I passed in on the array item
+function forEach(array, fn) {
+    var retArray = [];
+    for (var i = 0; i < array.length; i++) {
+        // Use the passed in function 'fn' on each array item
+        retArray.push(fn(array[i]));
+    }
+
+    return retArray;
+}
+
+// this for each pattern is so nice that Javascript provides it for us
+// automatically
+// It also gives us a few more array functions - map, filter, reduce (look them
+// up if you're curious, they can be very useful)
+colors.forEach(function(elt, i, array) {
+    console.log(elt);
+});
+
+// Map is another array iterator that returns a new array
+var notColors = colors.map(function(color, i, array) {
+    // The new items in the array will consist of whatever items are returned
+    // inside this function
+    return 'NOT ' + color;
+});
+
+// Filter returns a new array by removing some items from passed in array if
+// they don't meet some test
+var colorsWithoutIntegers = colors.filter(function(color) {
+    // If this function returns true, the array item is kept, otherwise it's
+    // not kept. NOTE: This doesn't affect the original array!
+    if (typeof color === 'number') {
+        return false;
+    } else {
+        return true;
+    }
+});
+console.log(colors);
+console.log(notColors);
+console.log(colorsWithoutIntegers);
+
+function upperCaseAndLog(string) {
+    var s = string.toUpperCase()
+}
+
+
+function isString(str) {
+    var ret = (typeof str === 'string');
+    return ret;
+}
+
+function isNumber(num) {
+    var ret = (typeof num === 'number');
+    return ret;
+}
+
+function isObject(obj) {
+    var ret = (typeof obj === 'object');
+    return ret;
+}
+
+// This is tricky.  It's a function that modifies other functions.  It takes
+// a function as an argument, creates a new function that calls the passed in
+// function, modifies the result in some way, then returns the new version of
+// the function
+// This specific example negates a function that returns a boolean value
+function negate(fn) {
+
+    function negatedFn(arg) {
+        var retVal = fn(arg);
+        return !retVal;
+    }
+
+    return negatedFn;
+}
+
+var isNotString = negate(isString);
+var isNotObject = negate(isObject);
+var isNotNumber = negate(isNumber);
+
+var s = 'string';
+console.log(isString(s));
+console.log(isNotString(3));
+
+// I can also pass functions in directly to our array iterators.
+var result = forEach(colors, isNotString);
+console.log(result);
+// Do other stuff
+//forEach(continents);
+
+
+// What is an object?
+// Everything is an object (or a primative - i.e. number, string, bool);
+var x = 3;
+
+// x is a number
+// But it's also an object, check it out in the browser
+// It's basically the same as doing this:
+var X = new Number(3);
+
+var s = 'a string primative';
+var S = new String('a string object');
+// In particular with strings, notice how the Object variant stores each
+// character of the string as a property on an object.
+
+// NOTE: I'm just showing you that strings and numbers are actually Objects
+// under the hood, but when you're actually coding, don't create primatives
+// using the 'new Number' or 'new String' syntax.
+
+// We can do the same with objects
+// i.e. use new Object() or new Array() - but don't actually do that in
+// practice, use the literal notation instead ( {} and [] )
+
+// Object literal
+var o = {
+    myStr: 'im a string',
+    myNum: 3,
+    myFunc: function(anArgument) {
+        console.log(anArgument);
+    },
+    myObj: {
+        anotherProp: 'Im another string'
+    }
+};
+
+// What is Object Oriented Programming?
+// In the simplest sense, it's a way of imitating real world things, like
+// people, or cars, and keeping track of small differences between individual
+// things while also keeping track of the similarities
+// One of the fundamental principles of OOP is inheritance, the idea that
+// things inherit properties from other things
+
+var animal = {
+    numberOfLegs: 0,
+    soundIMake: '',
+    speak: function() {
+        console.log(this.soundIMake);
+    },
+    jump: function() {
+        console.log('jump');
+    },
+    addLeg: function(n) {
+        this.numberOfLegs = this.numberOfLegs + 1;
+    }
+};
+
+// Inheritance -> cat and spider INHERIT properties and methods from animal
+// meaning they have access to all the stuff that animals can do
+var cat = Object.create(animal);
+cat.numberOfLegs = 4;
+cat.soundIMake = 'meow';
+var spider = Object.create(animal);
+spider.numberOfLegs = 8;
+spider.soundIMake = 'scritch';
+
+// Another way to create objects
+// Constructor function
+function Animal(numLegs, sound) {
+    console.log(this);
+    this.numberOfLegs = numLegs;
+    this.soundIMake = sound;
+}
+
+Animal.prototype = {
+    speak: function() {
+        console.log(this.soundIMake);
+    },
+    jump: function() {
+        console.log('jump');
+    }
+};
+
+console.log('CALLING CONSTRUCTOR --------');
+var cat = new Animal(4, 'meow');
+var spider = new Animal(8, 'scritch');
+
+
+var c = {
+    numberOfLegs: 4,
+    soundIMake: 'meow',
+    speak: function() {
+        console.log(this.soundIMake);
+    }
+};
+
+var s = {
+    numberOfLegs: 8,
+    soundIMake: 'scritch',
+    speak: function() {
+        console.log(this.soundIMake);
+    }
+};
+
+console.log(animal, cat, spider);
+
+/* Part 2: OOP */
+
+// Classical Object Orientated Programming uses classes (JavaScript DOES NOT
+// use classes)
+// Classical example
+// THIS IS PSUEDOCODE, IT"S NOT REAL CODE IN ANY LANGUAGE,
+// it just shows the basic outline of a class
+//class Building(address, numRooms, owner) {
+    //self.address = address;
+    //self.numRooms = numRooms;
+    //self.owner = owner;
+
+    //self.logOwner = function() {
+        //print self.owner;
+    //}
+
+    //self.addRooms = function(numRoomsToAdd) {
+        //self.rooms += numRoomsToAdd;
+    //}
+//}
+// Again, I want to stress that the above code is NOT VALID JAVASCRIPT, or any
+// other language, it's just psuedocode
+
+// Python Example
+//class Dog:
+    //def __init__(self, name):
+        //self.name = name
+        //self.tricks = []    # creates a new empty list for each dog
+
+    //def add_trick(self, trick):
+        //self.tricks.append(trick)
+
+//fido = Dog('fido')
+//spot = Dog('spot')
+
+// A class acts like a template, we create individual (called instances) by
+// using the template and giving it specifics about our object
+// Create a few new Buildings
+//var building1 = new Building('1 Blue Jay Way', 100, 'Enron');
+//var building2 = new Building('42 Hitchikers Ave', 42, 'Haliburton');
+
+// building1 and building2 are two distinct buildings, they share a similar
+// structure (they have an address, a number of rooms, and an owner), but the
+// details vary between the two buildings.
+
+// In the classical scheme, the class itself is not an Object, it's just
+// a Template. You only use the class to create new instances, or objects
+
+// Javascript is weirdly different.  It doesn't have classes, it ONLY has
+// Objects.  So instead of classes being used to create Objects, Objects are
+// created by using a different object as a template. The difference is subtle,
+// but important, in that template objects are still objects, and can be acted
+// up just like any other object. I can change the template object, and it will
+// affect all the objects created from the template.
+//
+// Confusingly, it also has a few different ways to create Objects, which can
+// lead to a bunch of confusion.  You'll likely see the following:
+//  1. new SomeObj();
+//  2. Object.create(someObj);
+
+// this IS valid JavaScript
+var building = {
+    numRooms: 100,
+    owner: 'Enron',
+    address: '1 Blue Jay Way',
+    logOwner: function() {
+        console.log(this.owner);
+    },
+    addRooms: function(numRoomsToAdd) {
+        this.numRooms = this.numRooms + numRoomsToAdd;
+    }
+};
+
+// I can't call building with the 'new' keyword, and we'll see why in a bit,
+// but for now, I'm going to do things the second way
+var building1 = Object.create(building);
+var building2 = Object.create(building);
+
+building1.address = '1 Inifinity Drive';
+building1.numRooms = 850;
+building1.owner = 'Apple';
 
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================   OBJECTS   =====================
@@ -618,6 +943,7 @@ magicAnswer.get(); // 3!!
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 // Igualdad
@@ -639,7 +965,9 @@ var jugadorUno = 500;
 var jugadorDos = 600;
 
 var mayorPuntaje = (jugadorUno > jugadorDos) ? jugadorUno : jugadorDos;
+
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 =================  OPERADORES  ====================
@@ -656,6 +984,7 @@ var mayorPuntaje = (jugadorUno > jugadorDos) ? jugadorUno : jugadorDos;
 ===================================================
 ===================================================
 ===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 */
 
 //IF: típico
@@ -705,9 +1034,368 @@ for (var i = 1; i < 5000 ; i++){
 }
 
 /*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 ===================================================
 ===================================================
 ==================   LOOPS    =====================
+===================================================
+===================================================
+===================================================
+*/
+
+/*
+===================================================
+===================================================
+==================   NODE    ======================
+===================================================
+===================================================
+===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
+
+/* Setup project and dependencies */
+npm init
+/* Install npm dependencies */
+npm install <pkg> --save || npm instal --save <pkg>  // sometimes with sudo too. use --save for installing locally and -g for globally
+
+/* Install all dependencies from package.json locally. When distributing. */
+npm install
+
+/* Auto Refresh server with nodemn */
+sudo npm install nodemon -g // install globally
+nodemon index.js // instead of node use nodemon for tracking refresh
+
+
+/* Export a module when using require() in main file. This is a way to keep the code modular.*/
+module.exports = {
+  log: function(thing){
+    console.log(thing);
+  }
+}
+
+// Start a server with http-server module
+http-server -p 8080 // runs in cd
+
+// New module in new file
+module.exports = function(){
+ // Code
+
+  return;
+};
+
+
+/*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+===================================================
+===================================================
+==================   NODE    ======================
+===================================================
+===================================================
+===================================================
+*/
+
+
+/*
+===================================================
+===================================================
+==================   D3    ========================
+===================================================
+===================================================
+===================================================
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
+
+// Selections
+d3.select('.className #id')
+  .text('change text') // Select the first element matching the className and/or id (css selector) and change its text
+d3.selectAll('.className #id')
+  .text('change text') // Select all elements and change its content
+d3.selectAll('.className:nth-child(2)')
+  .text('change name') // Select the n child in the "array" (it's not really an array). ITS NO 0 INDEX BASED!
+// Types of nth-child(x)
+x = odd; x = even; x = "2n"; x = "2n+1"; x = etc.
+
+d3.select('.item') // Select for the first item with the class of .item
+  .append('div') // Append a div to that item
+  .html('<strong>This is a bold text</strong>') // Add a strong tag div
+
+d3.select('#items') // Select for the div with id of items
+  .append('span') // Append a span to the end of that item
+  .html('<strong>This is a bold text</strong>') // Add a strong tag to that span
+
+d3.select('#items') // Select for the div with id of items
+  .append('span', ':nth-child(3)') // Append a span at the 3th item
+  .html('<strong>This is a bold text</strong>') // Add a strong tag to that span
+
+// Remove
+d3.select('#chart .item:nth-child)3') // Select for id of chart and select the div with class item that is in the 3rd position
+  .remove // Remove that element
+
+// Modifying Attributes and CSS
+d3.selectAll('.item') // Select al items with the class of item
+  .attr('class' , 'highlight') // Erase all previous classes and add the class highlight to all of them
+
+d3.selectAll('.item:nth-child(3)') // Select the 3rd item with the class of item
+  .classed('highlight', true) // Add 'highlight' to that item
+  .classed({ // Add classes with an object
+    'highlight': true,
+    'item': false,
+    'bigger': true
+  })
+
+d3.selectAll('.item:nth-child3') // Select the 3rd item with the class of item
+  .style({ // Add all this styles to the element
+    'background' : '#268BDE',
+    'padding' : '10px',
+    'margin' : '5px',
+    'color' : '#EEE8D5'
+  })
+
+// Binding data to the DOM
+/*
+ Using the data() operator with our dataset on a selection of DOM elements,
+ we join both sets of items with each other item by item.*/
+
+var myStylesOne = ['#268BDE']
+
+d3.selectAll('.item') // Select all items with the class of item
+  .data(myStylesOne) // add myStyles as data
+  .style('background', myStylesOne[0]) // apply myStyles[0] to the first object (since the data only has one value)
+
+var myStyles = [
+  { width: 200,
+    color: '#A57706'},
+  { width: 200,
+    color: '#268BDE'},
+  { width: 200,
+    color: '#FF7706'},
+  { width: 200,
+    color: '#A577FF'}
+]
+
+d3.selectAll('.item')
+  .data(myStyles) // Add myStyles as data
+  .style({
+    'color' : 'white', // Color white for all items with .item
+    'background' : function(d){ // Apply the first color to the first element in the selection
+      return d.color;
+    },
+    width : function(d){ // Apply the first width to the first element in the selection
+      return d.width + 'px';
+    }
+  })
+
+  var myStyleswithName = [
+    { width: 200,
+      name : 'juan',
+      color: '#A57706'},
+    { width: 200,
+      name : 'diego',
+      color: '#268BDE'},
+    { width: 200,
+      name : 'andres',
+      color: '#FF7706'},
+    { width: 200,
+      name : 'camila',
+      color: '#A577FF'}
+  ]
+
+// Creating subselections with enter()
+// When we call enter() on an existing selection, we switch
+// to a sub-selection representing the data that is yet to be
+// mapped to an element, because there is not yet enough of them on
+// the page to represent all of the current dataset.
+// In this case we start with just a <div id='#chart'></div> and add all the items recursively
+d3.selectAll('#chart').selectAll('div') // Although there are no divs in the html, the enter() command after allows to select it anyways (sub-selection)
+  .data(myStyleswithName)
+  .enter().append('div') // Here, the enter() allows to place the div backagain at the beggining so it can be selected with the initial selectAll('div')
+  .classed('item', true)
+  .text(function(d){
+    return d.name;
+  })
+  .style({
+    'color' : 'white', // Color white for all items with .item
+    'background' : function(d){ // Apply the first color to the first element in the selection
+      return d.color;
+    },
+    width : function(d){ // Apply the first width to the first element in the selection
+      return d.width + 'px';
+    }
+  })
+
+// SVG
+d3.select('#chart') // Select a div with id of #chart
+  .append('svg') // Append a SVG tag
+    .attr('width', 600) // Set the width of the svg
+    .attr('height', 400)  // Set the height of the svg
+    .style('background', '#93A1A1') // Set the background of the svg
+  .append('rect') // Append a rectangle to the SVG
+    .attr('x', 200)
+    .attr('y', 100)
+    .attr('height', 200)
+    .attr('width', 200)
+    style('fill', '#CB4B19')
+  d3.select('svg') // Select the SVG if not, it will append the circle inside the rect
+    .append('circle')
+    .attr('cx', 200)
+    .attr('cy', 100)
+    .attr('r', 50)
+    .style('fill', '#B4F919')
+
+    /*
+    This example creates a bar chart using D3.
+    */
+
+    // The data in array format
+    var bardata = [];
+    // Generate random set of numbers and push them to bardata
+    // for(var i = 0; i < 50; i++){
+    //   bardata.push(Math.random()*30);
+    // }
+
+    // Load data in TSV format
+    d3.tsv('data.tsv', function(data){
+      // Sort them in ascending order
+      // bardata.sort(function compareNumbers(a,b){
+      //   return a - b; // Sort my ascending order
+      // })
+      for (key in data){
+        bardata.push(data[key].value)
+      }
+      // Set the margins
+      var margin = {top: 30, right: 30, bottom: 40, left: 50}
+
+      // Values of the graph
+      var height = 400 - margin.top - margin.bottom,
+          width = 600 - margin.left - margin.right,
+          barWidth = 50,
+          barOffset = 5;
+
+      // Variable to store the value of each element
+      var tempColor;
+
+      // Linear Scale to use only two stops
+      // var colors = d3.scale.linear()
+      //   .domain([0,d3.max(bardata)])
+      //   .range(['#FFB832','#C61C6F'])
+
+      // Create a linear scale with 4 stops
+      var colors = d3.scale.linear()
+        .domain([0, bardata.length*.33, bardata.length*.66 ,bardata.length])
+        .range(['#FFB832','#C61C6F','#268BD2', '#85992C'])
+
+      // Create a linear scale to fit the values to the height of the SVG. Much as map()
+      var yScale = d3.scale.linear()
+        .domain([0,d3.max(bardata)]) // From '0' to 'max_value_find_in_array'
+        .range([0,height]) // Remap to to '0' to 'height'
+
+      // Create a ordinal scale to fit the values in the X axis
+      var xScale = d3.scale.ordinal()
+        .domain(d3.range(0, bardata.length)) // d3.range creates an array like this [0,1,2,3]
+        .rangeBands([0,width], 0.2, 0) // Remap it to '0' - 'width' and add a margin in between 0 and 1 and padding if necessary
+
+      // Create the item that will appear when hover over the value
+      var tooltip = d3.select('body').append('div')
+        .style('position', 'absolute')
+        .style('padding', '0 10px')
+        .style('background', 'white')
+        .style('opacity', '0')
+
+      // This is the chart element
+      var myChart = d3.select('#chart').append('svg') // Select the #chart item and append a SVG
+      // .style('background', '#C9D7D6') // Background of the SVG
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .append('g') // Create a group so then all elements will append to that
+        .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
+        .selectAll('rect').data(bardata)  // Select all rects that will be created with enter() using data()
+        .enter().append('rect')
+          .style('fill', function(d,i){
+            return colors(i); // Return the corresponding color in the remap array
+          })
+          .attr('width', xScale.rangeBand()) // Set the Width using the ordinal X scale
+          .attr('x', function(d,i){
+            return xScale(i);  // Set the position using the Xscale as well.
+          })
+          .attr('height', 0) // Start the graph with a value of 0 and then increment it with the anmination
+          .attr('y', height) // Use the height as the starting value.
+
+        // Events
+        .on('mouseover', function(d){ // Mouse Over
+            tooltip.transition()
+              .style('opacity', .9) // Set the opacity of the tooltip
+            tooltip.html(d) // Show the data '(d)' when hover over the element
+              .style('left', (d3.event.pageX - 35) + 'px') // Put in a little bit on top
+              .style('top', (d3.event.pageY - 30) + 'px')
+            tempColor = this.style.fill; // Save the current color of the element
+            d3.select(this) // When hover
+              .style('opacity', .5)
+              .style('fill', 'yellow') // Change the color to yellow
+        })
+        .on('mouseout', function(d){ // Mouse Out
+          d3.select(this)
+            .style('opacity', 1)
+            .style('fill', tempColor) // Return to the original color
+        })
+
+      // Animations setting for each element that is created in the chart
+      myChart.transition()
+        .attr('height', function(d){
+          return yScale(d); // Animate into position the height
+        })
+        .attr('y', function(d){
+          return height - yScale(d); // Animate into position the height
+        })
+        .delay(function(d, i){
+          return i * 20;  // Set a line by line animation for each element
+        })
+        .duration(1000) // Set the amount of time for each element
+        .ease('elastic') // Use a easing animation
+
+      // Create a Scale for the Y Axis
+      var vGuideScale = d3.scale.linear()
+        .domain([0, d3.max(bardata)])
+        .range([height, 0])
+
+      // Create Vertical Axis
+      var vAxis = d3.svg.axis()
+        .scale(vGuideScale) // Set the values using the yScale
+        .orient('left') // Where should it appear
+        .ticks(10) // 10 divisions
+
+      // The element to append the Vertical axis
+      var vGuide = d3.select('svg').append('g')
+        vAxis(vGuide) // Link it to the Axis created before
+        vGuide.attr('transform', 'translate('+ margin.left + ', ' + margin.top + ')') // Since the orientation is left, now we are applying a translation to show it more to the right
+        vGuide.selectAll('path')
+          .style({fill:'none', stroke: "#000"}) // Remove the background fill by default that the axis has
+        vGuide.selectAll('line')
+          .style({fill:'none', stroke: "#000"}) // Add horizontal tickmarks
+
+      // Create Horizontal Axis
+      var hAxis = d3.svg.axis()
+        .scale(xScale) // Use the scale created for the X values
+        .orient('bottom')
+        .tickValues(xScale.domain().filter(function(d,i){ // Set the amount of division. First, take the range of values in the xScale (xScale.domain()), then, filter them so we only get every 5th element
+          return !(i % (bardata.length/5));
+        }))
+
+      // The element to append the Horizontal axis
+      var hGuide = d3.select('svg').append('g')
+        hAxis(hGuide)
+        hGuide.attr('transform', 'translate('+ margin.left + ', ' + (height + margin.top) + ')')
+        hGuide.selectAll('path')
+          .style({fill:'none', stroke: "#000"}) // Remove the background fill by default that the axis has
+        hGuide.selectAll('line')
+          .style({fill:'none', stroke: "#000"}) // Add vertical tickmarks
+    });
+
+
+/*
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+===================================================
+===================================================
+==================   D3    ========================
 ===================================================
 ===================================================
 ===================================================

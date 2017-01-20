@@ -1,2 +1,2 @@
 # javascript_cheatsheet
-Simple Cheatsheet for .js
+Spanglish cheatsheet for js. 
